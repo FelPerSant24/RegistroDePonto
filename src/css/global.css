@@ -1,3 +1,4 @@
 @import url('./reset.css');
-@import url('/src/pages/login.css');
+@import url('/src/pages/Login/login.css');
 @import url('/src/components/Toast/toast.css');
+@import url('/src/pages/Main/main.css');

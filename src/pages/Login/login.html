@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/variables.css">
+    <link rel="stylesheet" href="/src/css/global.css" />
+    <link rel="shortcut icon" href="/src/assets/logo.png">
+    <script type="module" src="/src/scripts/login.js"></script>
+    <script type="module" src="/src/components/Toast/toast.js"></script>
+    <title>Login - Ponto Certo</title>
+</head>
+<body class="body-login">
+    <div class="toast-container"></div>
+    <header class="login--header-container">
+        <img class="login--header-content__img" src="/src/assets/logo.png" alt="Logo Ponto">
+        <h1 class="login--header-content__title">Ponto <span class="header-content__decoration">Certo</span></h1>
+    </header>
+    <form action="" class="login--form-container" id="login-form">
+        <h2 class="login--form-content__title">Login</h1>
+        <div class="login--form-content__input-group">
+            <img class="login--logo-input" src="/src/assets/user-solid-full.svg" alt="">
+            <input class="login--form-content__input" type="text" placeholder="Usuário" id="input-user"/>
+        </div>
+        <div class="login--form-content__input-group">
+            <img class="login--logo-input" src="/src/assets/key-solid-full.svg" alt="">
+            <input class="login--form-content__input" type="password" placeholder="Senha" id="input-password"/>
+        </div>
+        
+        <button type="submit" class="login--form-content__button">Entrar</button>
+        <a href="#">Esqueceu sua senha?</a>
+    </form>
+    <footer class="login--footer-container">
+        <p>&copy; 2025 Registro de Ponto. Todos os direitos reservados</p>
+        <span>|</span>
+        <p>Política de uso</p>
+        <span>|</span>
+        <p>Privacidade</p>
+    </footer>
+</body>
+</html>
