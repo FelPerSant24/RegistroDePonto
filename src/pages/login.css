@@ -1,0 +1,114 @@
+.body-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 6px;
+}
+
+.header-content__img {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.header-content__title {
+  margin: 0 0 2rem;
+  position: relative;
+  right: 34px;
+  top: 18px;
+  font-weight: 500;
+}
+
+.header-content__decoration {
+  color: var(--primary-color);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 6rem;
+  gap: 1rem;
+  max-width: 500px;
+  width: 450px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 13px -1px rgba(0, 0, 0, 0.2);
+}
+
+.form-content__title {
+  font-size: 1.5rem;
+}
+
+.form-content__input {
+  width: 100%;
+}
+
+.form-content__input-group {
+  position: relative;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.form-content__input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #c9d6e4;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #555;
+  transition: border-color 0.3s ease;
+}
+
+.form-content__input-group input:focus {
+  border-color: var(--button-blue-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.form-content__input-group .logo-input {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aeb9c7;
+  width: 20px;
+}
+
+.form-content__button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--button-blue-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.form-content__button:hover {
+  background-color: #0056b3;
+}
+
+.form-content__button:active {
+  transform: translateY(1px);
+}
+
+.footer-container {
+  display: flex;
+  gap: 1rem;
+  color: #777;
+}

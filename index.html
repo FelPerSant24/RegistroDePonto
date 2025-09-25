@@ -2,46 +2,41 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
-<title>Tela de Login</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/variables.css">
+    <link rel="stylesheet" href="/src/css/global.css" />
+    <link rel="shortcut icon" href="/src/assets/logo.png">
+    <script type="module" src="/src/scripts/login.js"></script>
+    <script type="module" src="/src/components/Toast/toast.js"></script>
+    <title>Login - Ponto Certo</title>
 </head>
-<body>
-<main class="card" role="main" aria-labelledby="titulo-login">
-<header class="brand">
-<div>
-<h1 id="titulo-login">Registro De Ponto</h1>
-<p class="lead">Informe seus dados.</p>
-</div>
-</header>
-
-<form id="loginForm" novalidate>
-<div>
-<label for="email">ID</label>
-<input id="email" name="email" type="email" class="input" placeholder="seu@exemplo.com" required aria-required="true" />
-<div id="emailError" class="error" aria-live="polite"></div>
-</div>
-
-<div>
-<label for="password">Senha</label>
-<div class="password-wrap">
-<input id="password" name="password" type="password" class="input" placeholder="••••••••" minlength="6" required aria-required="true" />
-</div>
-
-<div id="pwError" class="error" aria-live="polite"></div>
-</div>
-
-<div class="row">
-<label class="remember"><input type="checkbox" id="remember" /> <span class="small">Lembrar-me</span></label>
-<a href="#" class="link" id="forgotLink">Esqueci a senha</a>
-</div>
-
-<div>
-<button class="btn" type="submit">Entrar</button>
-</div>
-
-<script src="script.js"></script>
+<body class="body-login">
+    <div class="toast-container"></div>
+    <header class="header-container">
+        <img class="header-content__img" src="/src/assets/logo.png" alt="Logo Ponto">
+        <h1 class="header-content__title">Ponto <span class="header-content__decoration">Certo</span></h1>
+    </header>
+    <form action="" class="form-container" id="login-form">
+        <h2 class="form-content__title">Login</h1>
+        <div class="form-content__input-group">
+            <img class="logo-input" src="/src/assets/user-solid-full.svg" alt="">
+            <input class="form-content__input" type="text" placeholder="Usuário" id="input-user"/>
+        </div>
+        <div class="form-content__input-group">
+            <img class="logo-input" src="/src/assets/key-solid-full.svg" alt="">
+            <input class="form-content__input" type="password" placeholder="Senha" id="input-password"/>
+        </div>
+        
+        <button type="submit" class="form-content__button">Entrar</button>
+        <a href="#">Esqueceu sua senha?</a>
+    </form>
+    <footer class="footer-container">
+        <p>&copy; 2025 Registro de Ponto. Todos os direitos reservados</p>
+        <span>|</span>
+        <p>Política de uso</p>
+        <span>|</span>
+        <p>Privacidade</p>
+    </footer>
 </body>
 </html>
