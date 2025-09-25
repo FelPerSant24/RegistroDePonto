@@ -1,11 +1,47 @@
-<!DOCTYPE html>
-<html lang="br">
+<!-- index.html -->
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<title>Tela de Login</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<main class="card" role="main" aria-labelledby="titulo-login">
+<header class="brand">
+<div>
+<h1 id="titulo-login">Registro De Ponto</h1>
+<p class="lead">Informe seus dados.</p>
+</div>
+</header>
+
+<form id="loginForm" novalidate>
+<div>
+<label for="email">ID</label>
+<input id="email" name="email" type="email" class="input" placeholder="seu@exemplo.com" required aria-required="true" />
+<div id="emailError" class="error" aria-live="polite"></div>
+</div>
+
+<div>
+<label for="password">Senha</label>
+<div class="password-wrap">
+<input id="password" name="password" type="password" class="input" placeholder="••••••••" minlength="6" required aria-required="true" />
+</div>
+
+<div id="pwError" class="error" aria-live="polite"></div>
+</div>
+
+<div class="row">
+<label class="remember"><input type="checkbox" id="remember" /> <span class="small">Lembrar-me</span></label>
+<a href="#" class="link" id="forgotLink">Esqueci a senha</a>
+</div>
+
+<div>
+<button class="btn" type="submit">Entrar</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
