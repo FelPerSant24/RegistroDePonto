@@ -7,13 +7,14 @@ body {
 
 .header-container {
   width: 100%;
-  padding: 1rem;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  margin-bottom: 3rem;
 }
 
 .header-logo__container {
@@ -23,6 +24,10 @@ body {
 
 .header-content__img {
   width: 70px;
+}
+
+.header-content__decoration {
+    color: var(--primary-color);
 }
 
 .header-content__title {
@@ -42,6 +47,10 @@ body {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 600;
+}
+
+.header-links__item a:hover {
+    color: #444;
 }
 
 .header-no-act__container {
@@ -73,4 +82,77 @@ body {
 
 .header-quit__button:hover {
     background-color: #e0e8ed;
+}
+
+.main-container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main-clock__container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 5px 5px 11px -3px rgba(0,0,0,0.11);
+}
+
+.main-clock__hour {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-clock__ampm {
+    font-size: 1.3rem;
+    font-weight: 400;    
+}
+
+.main-clock__button {
+    background-color: #0276F6;
+    color: white;
+    padding: .5rem 2rem;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.main-clock__button:hover {
+    background-color: #005fc0;
+}
+
+.dashboard-container {
+    width: 80%;
+    margin: 2rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card-container {
+    flex-grow: 1;
+    padding: 1rem;
+    display: flex;
+    gap: .6rem;
+    box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.card-container__img {
+    width: 20px;
+    position: relative;
+    
+}
+
+.card-container__content {
+
 }
